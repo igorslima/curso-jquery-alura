@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css" />
+
+
+</head>
+<body>
+    <!-- Seja bem vindo ao curso de jQuery :) -->
+    <div class="container">
+       <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <div class="center">
+            <img src="img/spinner.gif" alt="Carregando" id="spinner"/>
+            <p id="erro">Ocorreu um erro, tente novamente</p>
+        </div>
+        <ul class="informacoes center">
+            
+            <li>
+                <i class="small material-icons icones">description</i>
+                <spam id="tamanho-frase">5</spam> palavras</li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <spam id="tempo-digitacao">3</spam> segundos</li>
+        </ul>
+    
+        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="botao-reiniciar">restore</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons" id="botao-placar">assignment</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="botao-troca-frase">shuffle</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons" id="botao-troca-frase-id">repeat_one</i></a>
+            <input type="number" id="frase-id" min=0>
+            
+            <div class="select-usuarios">
+                <select id="usuarios">
+                   <option value="Douglas">Douglas</option>
+                   <option value="Flavio">Flavio</option>
+                   <option value="Nico">Nico</option>
+                </select>
+            </div>
+            
+            <a class="tooltip btn-floating btn-large waves-effect waves-light yellow" id="botao-sync" title="Sincronizado com sucesso"><i class="material-icons" >swap_vert</i></a>
+        </div>
+       <!--<button id="botao-reiniciar">Reinicar Jogo</button> -->
+        <ul class="informacoes center">
+            <li>
+                    
+
+                <spam id="contador-palavras">0</spam> palavras</li>
+            <li><spam id="contador-caracteres">0</spam> caracteres</li>
+        </ul>    
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="center bordered">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Numero de Palavras</td>
+                        <td><i class="material-icons">Remover</i></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+
+</body>
+</html>
